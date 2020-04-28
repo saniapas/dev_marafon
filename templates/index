@@ -1,0 +1,6 @@
+Template, Hostname, Vendor, Command
+sh_ntp_status.template, .*, cisco_ios, sh[[ow]] ntp s[[tatus]]
+sh_version.template, .*, cisco_ios, sh[[ow]] ve[[rsion]]
+sh_cdp_ne.template, .*, cisco_ios, sh[[ow]] cdp ne[[ighbors]]
+sh_cdp.template, .*, cisco_ios, sh[[ow]] cdp
+

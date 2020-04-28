@@ -1,0 +1,4 @@
+  device_type: cisco_ios
+  username: cisco
+  password: cisco
+  secret: cisco

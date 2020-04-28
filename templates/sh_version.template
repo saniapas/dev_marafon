@@ -1,0 +1,8 @@
+Value IOS (\S+)
+Value Version (\S+)
+Value Model (\S+)
+
+
+Start
+  ^Cisco IOS Software.* Software \(${IOS}\), Version ${Version},
+  ^\S+ ${Model} \(.*\) processor .* bytes of memory -> Record

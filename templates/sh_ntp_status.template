@@ -1,0 +1,4 @@
+Value ntp_status (\S+)
+
+Start
+  ^Clock is ${ntp_status}, -> Record

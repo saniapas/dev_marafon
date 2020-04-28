@@ -1,0 +1,4 @@
+show version,
+show cdp,
+show cdp neighbors;
+show ntp status

@@ -1,0 +1,5 @@
+Value Total_entries (\d+)
+
+
+Start
+  ^Total cdp entries displayed : ${Total_entries} -> Record

@@ -1,0 +1,14 @@
+In File excluded_ip.txt unsupport IP: 10.2.3
+NTP Server 192.168.100.200 недоступен c 192.168.100.1
+Конфигурация применена на устройство 192.168.100.1
+NTP Server 192.168.100.200 недоступен c 192.168.100.2
+Конфигурация применена на устройство 192.168.100.2
+NTP Server 192.168.100.200 недоступен c 192.168.100.3
+Конфигурация применена на устройство 192.168.100.3
+NTP Server 192.168.100.200 недоступен c 192.168.100.110
+Конфигурация применена на устройство 192.168.100.110
+Резервное копирование выполнено
+r1|Unix|I86BI_LINUX-ADVENTERPRISEK9-M-15.4(2)T4|NPE|CDP is OFF|Clock in Sync
+r2|Unix|I86BI_LINUX-ADVENTERPRISEK9-M-15.4(2)T4|NPE|CDP is ON, 2 peers|Clock in Sync
+r3|Unix|I86BI_LINUX-ADVENTERPRISEK9-M-15.4(2)T4|NPE|CDP is ON, 2 peers|Clock in Sync
+sw1|Unix|I86BI_LINUXL2-ADVENTERPRISEK9-M-15.2(CML_NIGHTLY_20151103)FLO_DSGS7|NPE|CDP is ON, 2 peers|Clock in Sync

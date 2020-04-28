@@ -1,0 +1,137 @@
+Current configuration : 1473 bytes
+!
+! Last configuration change at 22:24:41 GMT Tue Apr 28 2020 by cisco
+!
+version 15.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname r1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+logging buffered 20010
+no logging console
+enable secret 5 $1$5bYX$uijjqw3yYUU3l/rd3zkDC1
+!
+no aaa new-model
+clock timezone GMT 0 0
+mmi polling-interval 60
+no mmi auto-configure
+no mmi pvc
+mmi snmp-timeout 180
+!
+!
+!
+!
+!
+!
+!
+!
+
+
+!
+!
+!
+!
+ip domain name home.local
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+!
+!
+!
+!
+!
+!
+!
+username cisco secret 5 $1$Xxwx$vewOBYVXVOqqBSA98RVm0/
+!
+redundancy
+!
+no cdp run
+!
+! 
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Loopback55
+ ip address 5.5.5.5 255.255.255.255
+!
+interface Tunnel0
+ no ip address
+!
+interface Tunnel2
+ no ip address
+!
+interface Tunnel5
+ no ip address
+!
+interface Tunnel6
+ no ip address
+!
+interface Tunnel7
+ no ip address
+!
+interface Ethernet0/0
+ ip address 192.168.100.1 255.255.255.0
+!
+interface Ethernet0/1
+ no ip address
+ shutdown
+!
+interface Ethernet0/2
+ no ip address
+ shutdown
+!
+interface Ethernet0/3
+ no ip address
+ shutdown
+!
+router ospf 55
+ network 0.0.0.0 255.255.255.255 area 0
+!
+ip forward-protocol nd
+!
+!
+ip http server
+no ip http secure-server
+!
+logging host 10.1.1.1
+!
+!
+!
+control-plane
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ logging synchronous
+line aux 0
+line vty 0 4
+ login local
+ transport input all
+!
+ntp server 192.168.100.200
+ntp server 192.168.100.100
+!
+end

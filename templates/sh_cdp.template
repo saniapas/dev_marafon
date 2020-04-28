@@ -1,0 +1,4 @@
+Value CDP_status (.*)
+
+Start
+  ^\% CDP is ${CDP_status} -> Record
