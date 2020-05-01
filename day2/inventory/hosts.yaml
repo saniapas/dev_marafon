@@ -1,0 +1,53 @@
+---
+R1:
+ hostname: 192.168.100.1
+ groups:
+   - cisco
+ data:
+   tags:
+     - routers
+
+R2:
+ hostname: 192.168.100.2
+ groups:
+   - cisco
+ data:
+   tags:
+     - routers
+R3:
+ hostname: 192.168.100.3
+ groups:
+   - cisco
+ data:
+   tags:
+     - routers
+
+
+sw1:
+ hostname: 192.168.100.110
+ groups:
+   - cisco
+ data:
+   tags:
+     - switches
+sw2:
+ hostname: 192.168.100.20
+ groups:
+   - cisco
+ data:
+   tags:
+     - switches
+sw3:
+ hostname: 192.168.100.22
+ groups:
+   - cisco
+ data:
+   tags:
+     - switches
+sw4:
+ hostname: 192.168.100.21
+ groups:
+   - cisco
+ data:
+   tags:
+     - switches
