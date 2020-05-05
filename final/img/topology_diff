@@ -1,0 +1,14 @@
+graph {
+	graph [fontcolor=Black fontsize=14 label="Network Topology" nodesep=1 rankdir=LR ranksep=1 ratio=fill splines=ortho]
+	node [fontcolor=red labelloc=b margin=0.4]
+	edge [color=black fontcolor=blue fontname=Courier fontsize=12 style=bold]
+	sw3 [label="
+
+
+sw3" shapefile="R.png"]
+	sw6 [label="
+
+
+sw6" shapefile="R.png"]
+	sw3 -- sw6 [label="               " headlabel="Et0/3" taillabel="Et1/0"]
+}

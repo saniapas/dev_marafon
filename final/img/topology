@@ -1,0 +1,70 @@
+graph {
+	graph [fontcolor=Black fontsize=14 label="Network Topology" nodesep=1 rankdir=LR ranksep=1 ratio=fill splines=ortho]
+	node [fontcolor=red labelloc=b margin=0.4]
+	edge [color=black fontcolor=blue fontname=Courier fontsize=12 style=bold]
+	r5 [label="
+
+
+r5" shapefile="R.png"]
+	sw4 [label="
+
+
+sw4" shapefile="R.png"]
+	sw3 [label="
+
+
+sw3" shapefile="R.png"]
+	router [label="
+
+
+router" shapefile="R.png"]
+	sw1 [label="
+
+
+sw1" shapefile="R.png"]
+	sw7 [label="
+
+
+sw7" shapefile="R.png"]
+	sw8 [label="
+
+
+sw8" shapefile="R.png"]
+	r10 [label="
+
+
+r10" shapefile="R.png"]
+	sw5 [label="
+
+
+sw5" shapefile="R.png"]
+	r4 [label="
+
+
+r4" shapefile="R.png"]
+	sw6 [label="
+
+
+sw6" shapefile="R.png"]
+	r11 [label="
+
+
+r11" shapefile="R.png"]
+	sw2 [label="
+
+
+sw2" shapefile="R.png"]
+	r11 -- sw3 [label="               " headlabel="Et0/2" taillabel="Et0/0"]
+	r10 -- sw2 [label="               " headlabel="Et0/2" taillabel="Et0/0"]
+	r4 -- sw1 [label="               " headlabel="Et0/1" taillabel="Et0/0"]
+	r5 -- sw1 [label="               " headlabel="Et0/2" taillabel="Et0/0"]
+	sw1 -- sw2 [label="               " headlabel="Et0/0" taillabel="Et0/3"]
+	sw1 -- sw3 [label="               " headlabel="Et0/0" taillabel="Et1/0"]
+	sw1 -- sw5 [label="               " headlabel="Et0/2" taillabel="Et1/1"]
+	sw2 -- sw4 [label="               " headlabel="Et0/1" taillabel="Et0/1"]
+	sw3 -- sw6 [label="               " headlabel="Et0/3" taillabel="Et1/0"]
+	sw3 -- sw5 [label="               " headlabel="Et0/0" taillabel="Et0/3"]
+	sw4 -- sw7 [label="               " headlabel="Et0/0" taillabel="Et0/3"]
+	sw4 -- sw8 [label="               " headlabel="Et0/0" taillabel="Et0/2"]
+	sw5 -- router [label="               " headlabel="Et0/0" taillabel="Et0/1"]
+}

@@ -1,0 +1,8 @@
+username: cisco
+password: cisco
+secret: cisco
+
+connection_options:
+    netmiko:
+        secret: cisco
+        use_keys: False

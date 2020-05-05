@@ -1,0 +1,105 @@
+R10:
+- capabilities: R
+  local_interface: Et0/0
+  neighbor: sw2
+  neighbor_interface: Et0/2
+R11:
+- capabilities: R
+  local_interface: Et0/0
+  neighbor: sw3
+  neighbor_interface: Et0/2
+R4:
+- capabilities: R
+  local_interface: Et0/0
+  neighbor: sw1
+  neighbor_interface: Et0/1
+R5:
+- capabilities: R
+  local_interface: Et0/0
+  neighbor: sw1
+  neighbor_interface: Et0/2
+sw1:
+- capabilities: R
+  local_interface: Et0/3
+  neighbor: sw2.home.local
+  neighbor_interface: Et0/0
+- capabilities: R
+  local_interface: Et0/1
+  neighbor: r4.home.local
+  neighbor_interface: Et0/0
+- capabilities: R
+  local_interface: Et0/2
+  neighbor: R5.home.local
+  neighbor_interface: Et0/0
+- capabilities: R
+  local_interface: Et0/1
+  neighbor: r4.home.local
+  neighbor_interface: Et0/0.20
+- capabilities: R
+  local_interface: Et0/1
+  neighbor: r4.home.local
+  neighbor_interface: Et0/0.10
+- capabilities: R
+  local_interface: Et1/0
+  neighbor: sw3.home.local
+  neighbor_interface: Et0/0
+- capabilities: R
+  local_interface: Et1/1
+  neighbor: sw5.home.local
+  neighbor_interface: Et0/2
+sw2:
+- capabilities: R
+  local_interface: Et0/0
+  neighbor: sw1.home.local
+  neighbor_interface: Et0/3
+- capabilities: R
+  local_interface: Et0/2
+  neighbor: r10.home.local
+  neighbor_interface: Et0/0
+- capabilities: R
+  local_interface: Et0/1
+  neighbor: sw4.home.local
+  neighbor_interface: Et0/1
+sw3:
+- capabilities: R
+  local_interface: Et0/0
+  neighbor: sw1.home.local
+  neighbor_interface: Et1/0
+- capabilities: R
+  local_interface: Et0/2
+  neighbor: r11.home.local
+  neighbor_interface: Et0/0
+- capabilities: R
+  local_interface: Et1/0
+  neighbor: sw6.home.local
+  neighbor_interface: Et0/3
+- capabilities: R
+  local_interface: Et0/3
+  neighbor: sw5.home.local
+  neighbor_interface: Et0/0
+sw4:
+- capabilities: R
+  local_interface: Et0/1
+  neighbor: sw2.home.local
+  neighbor_interface: Et0/1
+- capabilities: R
+  local_interface: Et0/3
+  neighbor: sw7.home.local
+  neighbor_interface: Et0/0
+- capabilities: R
+  local_interface: Et0/2
+  neighbor: sw8.home.local
+  neighbor_interface: Et0/0
+sw5:
+- capabilities: R
+  local_interface: Et0/1
+  neighbor: Router
+  neighbor_interface: Et0/0
+- capabilities: R
+  local_interface: Et0/2
+  neighbor: sw1.home.local
+  neighbor_interface: Et1/1
+- capabilities: R
+  local_interface: Et0/0
+  neighbor: sw3.home.local
+  neighbor_interface: Et0/3
